@@ -15,7 +15,8 @@ saveButton.click(function(event) {
     localStorage.setItem(inputTxt, inputToStorage);
 })
 
-for (let index = 1; index < 10; index++) {
+// create a for loop with jquery that will pull from local storage for each row and apply it after page is reloaded
+for (var index = 1; index < 10; index++) {
     $(`#text${index}`).text(localStorage.getItem(`text${index}`));
     
 }
