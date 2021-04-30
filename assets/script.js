@@ -14,3 +14,8 @@ saveButton.click(function(event) {
     var inputToStorage = $(this.parentNode).children('.content').val();
     localStorage.setItem(inputTxt, inputToStorage);
 })
+
+for (let index = 1; index < 10; index++) {
+    $(`#text${index}`).text(localStorage.getItem(`text${index}`));
+    
+}
